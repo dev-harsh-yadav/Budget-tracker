@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <title>BUDGET TRACKER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="bgImage">
+        <div class="header">
+            <div id="head" class="design">Availble Budget in Feb 2023:</div>
+            <div id="total" class="design">000.0</div>
+            <div id="income" class="design">INCOME 00.00</div>
+            <div id="expenses" class="design">EXPENSE 00.00</div>
+        </div>
+    </div>
+    <div class="mid">
+        <div class="middel">
+            <label for="r">
+                <input type="radio" name="slections" value="income" onchange="updateUiIncome()" id="r">INCOME
+            </label>
+            <label for="p">
+                <input type="radio" name="slections" value="expenses" onchange="updateUiExpense()" id="p">EXPENSES
+            </label>
+            <input type="text" id="work" placeholder="Add Description">
+            <input type="text" id="val" placeholder="value">
+            <input type="button" value="✓" id="btnTick">
+        </div>
+    </div>
+    <div class="lower">
+        <div id="left">
+            <h1 style="color: rgb(0, 210, 0); " class="tittle">INCOME</h1>
+            <div class="moreIncome">
+            </div>
+        </div>
+        <div id="right">
+            <h1 style="color:red;" class="tittle">EXPENSES</h1>
+            <div class="moreExpense">
+                <!-- <span>sales</span>  <span>500</span> -->
+            </div>
+        </div>
+        <div class="leftContent">
+
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
